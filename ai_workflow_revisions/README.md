@@ -8,7 +8,7 @@ Workflow revisions are point-in-time snapshots of governance rules and supportin
 - The latest baseline should carry the `_current` suffix: `rev_00N_current`.
 - When creating a new baseline, rename the previous `_current` folder to remove the suffix.
 
-Current baseline snapshot: _none yet_ (public seed). Create `rev_001_current` before the first governance change.
+Current baseline snapshot: `rev_001_current` (local, gitignored in this workspace). The next snapshot will increment to `rev_002_current`.
 
 ## Required Snapshot Contents
 Copy the following into the revision folder, preserving relative paths:

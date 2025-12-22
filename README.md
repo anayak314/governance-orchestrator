@@ -73,4 +73,4 @@ Yes. The framework can be adapted to any structured project work that needs clar
 - `docs/humans/about.md` (why this framework exists and how it evolved)
 
 ## Framework revision snapshots (local)
-Framework snapshots are stored locally under `ai_workflow_revisions/` and are gitignored by default. Ask the agent to run `scripts/create-workflow-revision.sh` after governance changes. See `docs/workflow-revisions.md` for the required contents and numbering rules.
+Framework snapshots are stored locally under `ai_workflow_revisions/` and are gitignored by default. Ask the agent to run `scripts/create-workflow-revision.sh` after governance changes. See `docs/workflow-revisions.md` for the required contents and numbering rules. You’re free to adapt the framework to your project—just tell the agent to update itself in whatever way best fits, and it will apply the change and capture the new revision.

@@ -4,6 +4,9 @@
 
 Entries use ISO8601 timestamps and newest entries appear first.
 
+## 2025-12-22T23:26:34+00:00
+- Added note to README snapshot section that users can ask the agent to update the framework to fit the project; captured local snapshot `rev_001_current`. (ledger: 2025-12-22T15:19:54-08:00 — README change request confirmation)
+
 ## 2025-12-22T22:58:10+00:00
 - Simplified quick-start header to “any agentic frontend (Codex, Gemini, Claude/Anthropic, Grok, etc.)” and captured local snapshot `rev_043_current`. (ledger: 2025-12-22T14:57:37-08:00 — Quick-start header phrasing)
 

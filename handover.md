@@ -7,7 +7,7 @@
 
 ## State Snapshot
 - Governance files exist and todos are clear: `todo-inbox.md` holds only template text; `todo.md`/`backlog.md` have no entries; bugs are empty.
-- Workflow snapshots are stored locally under `ai_workflow_revisions/` (gitignored by default); `README.md` + `docs/workflow-revisions.md` describe the snapshot process (run `scripts/create-workflow-revision.sh`).
+- Workflow snapshots are stored locally under `ai_workflow_revisions/` (gitignored by default); current baseline `rev_001_current` was captured via `scripts/create-workflow-revision.sh` (see `docs/workflow-revisions.md` for required contents/numbering).
 - Key references: `AGENTS.md`, `docs/agents.md`, `docs/humans/workflow-guide.md`, `docs/context-management.md`, `docs/security.md`, `docs/access-manifest.md`, `docs/skills/skill-library-v1.md`, `specs/skill-library-v1.md`, `scripts/skillctl`, and `skills/README.md`.
 - Upstream metadata catalog for agent selection: `docs/skills/upstream-skillcards.anthropic.json`.
 - `skillctl` setup script creates `.venv-skillctl/` (ignored by git via `.gitignore`).
@@ -18,6 +18,7 @@
 - Skill scaffolding exists under `skills/_template/` and the contract schema is `skills/_schema/skill.schema.json`; implemented Skills: `skills/fs-hash-tree/`, `skills/skillcard-parse/`, and `skills/skillcard-index/`.
 
 ## Recent Progress
+- Added README snapshot section note that users can ask the agent to update the framework to fit the project; captured local snapshot `rev_001_current`. Skill: none. (ledger: 2025-12-22T15:19:54-08:00 — README change request confirmation).
 - Simplified quick-start header to “any agentic frontend (Codex, Gemini, Claude/Anthropic, Grok, etc.)” and captured local snapshot `rev_043_current`. Skill: none. (ledger: 2025-12-22T14:57:37-08:00 — Quick-start header phrasing).
 - Clarified quick-start usage across Codex and other agentic frontends, kept the framework as the source of truth, and captured local snapshot `rev_042_current`. Skill: none. (ledger: 2025-12-22T14:44:26-08:00 — Quick-start provider guidance).
 - Reworded quick-start prompt to instruct applying the public framework for new and existing projects; captured local snapshot `rev_041_current`. Skill: none. (ledger: 2025-12-22T14:38:20-08:00 — Quick-start prompt rewording).

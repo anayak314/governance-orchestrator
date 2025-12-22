@@ -1,5 +1,22 @@
 # Planner / Task Manager Ledger
 
+## 2025-12-22T15:19:54-08:00 — README change request confirmation
+- Summary: Add a note in README’s snapshot section that users can ask the framework to update itself to fit the project; confirmed active repo.
+- Details:
+  - Pre-task `todo-inbox.md` sweep: no items to move (template text only).
+  - Clarification Gate: not triggered (request is clear).
+  - Reasoning Skills pipeline (pre-planner) logs:
+    - {"event_type":"reasoning","skill_name":"bind_spec_id","order":1,"guarantees":["spec_id_context: none (governance doc update)"],"violations":[],"abort_reason":null}
+    - {"event_type":"reasoning","skill_name":"enforce_single_concept","order":2,"guarantees":["concept: framework-governance-docs"],"violations":[],"abort_reason":null}
+    - {"event_type":"reasoning","skill_name":"forbid_cross_concept_reasoning","order":3,"guarantees":["no_cross_concept_dependencies"],"violations":[],"abort_reason":null}
+  - Skill search: available Skills list has no documentation-edit helper; proceeding without a bound Skill (governance/doc task).
+  - Progress: updated README snapshot section with user-driven self-update note; refreshed `ai_workflow_revisions/README.md` baseline text; logged change to `completed.md`, `CHANGELOG.md`, and `handover.md` with planned snapshot `rev_001_current`.
+  - Scope: update README section “Framework revision snapshots (local)” with user-driven self-update note; then snapshot + log updates per governance.
+  - Snapshot/logging: created `ai_workflow_revisions/rev_001_current` via `scripts/create-workflow-revision.sh` and confirmed post-task `todo-inbox.md` sweep (no items).
+- Related Spec / Skill: n/a (no applicable Skill)
+- Pending Actions: none
+- Status: completed
+
 ## 2025-12-04T23:49:56-08:00 — Workflow stack generalization
 - Summary: Add stack-agnostic core in AGENTS.md and spin out stack-specific profiles (Node, Python) plus navigation updates.
 - Details:
