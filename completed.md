@@ -7,6 +7,7 @@
 - [x] 2025-12-24: Emphasized the `HUMAN_START_HERE.md` entrypoint in README quick start and cleared the inbox request. Skill: none. (ledger: 2025-12-24T13:58:44-08:00 — Human-friendly glossary and wiki clarifications)
 - [x] 2025-12-24: Added spec-compiler-enforcement CI to require spec-generation-framework provenance, validation, Codex prompt consumption, and compiler drift detection. Skill: none. (ledger: 2025-12-24T18:15:02-08:00 — Spec compiler CI enforcement)
 - [x] 2025-12-24: Rewrote the context management rationale with a structured, falsifiable section for reducing context pressure and resumable workflows. Skill: none. (ledger: 2025-12-24T23:46:09-08:00 — Context window benefits documentation)
+- [x] 2025-12-24: Added a plain-English note in README that the chat window stays lean because state is externalized. Skill: none. (ledger: 2025-12-24T23:53:34-08:00 — README plain-English context window note)
 
 - [x] 2025-12-24: Processed `todo-inbox.md` update (queued `prompt_followup9.md`) and confirmed readme-spec-engine repo is unavailable; prompt followups 8-9 are blocked. Skill: none. (ledger: 2025-12-24T13:36:38-08:00 — Prompt followup execution (README governance))
 

@@ -1,5 +1,17 @@
 # Planner / Task Manager Ledger
 
+## 2025-12-24T23:53:34-08:00 — README plain-English context window note
+- Summary: Add a plain-English note in README that context windows stay lean because state is externalized.
+- Details:
+  - Pre-task `todo-inbox.md` sweep: inbox empty.
+  - Clarification Gate: not triggered (request is clear).
+  - Reasoning Skills pipeline (pre-planner) logs:
+    - {"event_type":"reasoning","skill_name":"bind_spec_id","order":1,"guarantees":["spec_id_context: none (README context window note)"],"violations":[],"abort_reason":null}
+    - {"event_type":"reasoning","skill_name":"enforce_single_concept","order":2,"guarantees":["concept: documentation-clarity"],"violations":[],"abort_reason":null}
+    - {"event_type":"reasoning","skill_name":"forbid_cross_concept_reasoning","order":3,"guarantees":["no_cross_concept_dependencies"],"violations":[],"abort_reason":null}
+- Related Spec / Skill: n/a (documentation clarity).
+- Status: completed
+
 ## 2025-12-24T23:46:09-08:00 — Context window benefits documentation
 - Summary: Add a structured documentation section explaining how the framework reduces effective LLM context usage and enables resumable workflows.
 - Details:

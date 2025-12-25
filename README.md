@@ -88,6 +88,7 @@ It is not a prompt library or a set of agent heuristics.
 - Fewer correction loops because constraints are re-read, not re-taught.
 - Easy session restarts: reload `handover.md`, `todo.md`, and relevant specs.
 - Lower human cognitive load: follow the map instead of retyping context.
+- The chat window stays lean; in typical runs it rarely exhausts context because state lives in files (limits still apply).
 - Detailed rationale: see `docs/humans/context-management.md`.
 
 ### Non-claims and boundaries
