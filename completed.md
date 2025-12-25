@@ -2,6 +2,10 @@
 
 **AI-managed file — humans should not edit this directly.** The agent records finished work here.
 
+- [x] 2025-12-24: Added human-friendly glossary and concepts map, linked them from README/HUMAN_START_HERE/wiki index. Skill: none. (ledger: 2025-12-24T13:58:44-08:00 — Human-friendly glossary and wiki clarifications)
+- [x] 2025-12-24: Added context management deep dive doc and linked it from README and the wiki index. Skill: none. (ledger: 2025-12-24T13:58:44-08:00 — Human-friendly glossary and wiki clarifications)
+- [x] 2025-12-24: Emphasized the `HUMAN_START_HERE.md` entrypoint in README quick start and cleared the inbox request. Skill: none. (ledger: 2025-12-24T13:58:44-08:00 — Human-friendly glossary and wiki clarifications)
+
 - [x] 2025-12-24: Processed `todo-inbox.md` update (queued `prompt_followup9.md`) and confirmed readme-spec-engine repo is unavailable; prompt followups 8-9 are blocked. Skill: none. (ledger: 2025-12-24T13:36:38-08:00 — Prompt followup execution (README governance))
 
 - [x] 2025-12-24: Executed `prompt_followup9.md` (README governance CI bridge + new repo bootstrap Skill), captured workflow snapshot `rev_009_current`, and removed the prompt. Skill: none. (ledger: 2025-12-24T13:36:38-08:00 — Prompt followup execution (README governance))

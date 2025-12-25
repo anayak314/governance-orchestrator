@@ -1,5 +1,20 @@
 # Planner / Task Manager Ledger
 
+## 2025-12-24T13:58:44-08:00 — Human-friendly glossary and wiki clarifications
+- Summary: Add clarifying documents (wiki-style) so users can click terms/concepts for definitions and explanations.
+- Details:
+  - Pre-task `todo-inbox.md` sweep: inbox empty.
+  - Clarification Gate: not triggered (request is clear).
+  - Reasoning Skills pipeline (pre-planner) logs:
+    - {"event_type":"reasoning","skill_name":"bind_spec_id","order":1,"guarantees":["spec_id_context: none (glossary documentation)"],"violations":[],"abort_reason":null}
+    - {"event_type":"reasoning","skill_name":"enforce_single_concept","order":2,"guarantees":["concept: documentation-clarity"],"violations":[],"abort_reason":null}
+    - {"event_type":"reasoning","skill_name":"forbid_cross_concept_reasoning","order":3,"guarantees":["no_cross_concept_dependencies"],"violations":[],"abort_reason":null}
+  - Progress: added `docs/humans/glossary.md`, `docs/humans/concepts-map.md`, and linked them from README, HUMAN_START_HERE, and the wiki index.
+  - Progress: added `docs/humans/context-management.md` deep dive and linked it from README and the wiki index.
+  - Progress: emphasized the `HUMAN_START_HERE.md` entrypoint in README and cleared the matching inbox request.
+- Related Spec / Skill: n/a (documentation clarity).
+- Status: completed
+
 ## 2025-12-24T13:36:38-08:00 — Prompt followup execution (README governance)
 - Summary: Execute prompt_followup8-9 in order, covering README spec governance, CI bridge, and agent bootstrap contract.
 - Details:

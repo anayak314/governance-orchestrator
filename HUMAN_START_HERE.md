@@ -21,6 +21,7 @@ If your provider has built-in governance features, use this framework as the sou
 ## Where Humans Should Act
 - Use chat or `todo-inbox.md` to submit tasks and decisions.
 - Do not edit AI-managed files: `todo.md`, `backlog.md`, `completed.md`, `handover.md`, `CHANGELOG.md`.
+- Use `docs/humans/glossary.md` when a term is unfamiliar; use `docs/humans/concepts-map.md` to jump to authoritative docs.
 
 ## README governance
 Humans author `README_SPEC.yaml` when defining new projects; agents may draft it only when directed and must keep humans in the loop.
@@ -38,3 +39,5 @@ When the spec changes, regenerate the README externally and rerun the enforcemen
 - `docs/humans/workflow-guide.md` (framework overview)
 - `docs/humans/workflow-adoption.md` (apply to a new project)
 - `docs/humans/about.md` (background and evolution)
+- `docs/humans/glossary.md` (definitions and clickable links)
+- `docs/humans/concepts-map.md` (navigation map)

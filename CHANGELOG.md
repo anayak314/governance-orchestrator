@@ -4,6 +4,13 @@
 
 Entries use ISO8601 timestamps and newest entries appear first.
 
+## 2025-12-24T22:00:27+00:00
+- Added human-friendly glossary and concepts map, linking them from README, HUMAN_START_HERE, and the wiki index. (ledger: 2025-12-24T13:58:44-08:00 — Human-friendly glossary and wiki clarifications)
+- Added context management deep dive doc and linked it from README and the wiki index. (ledger: 2025-12-24T13:58:44-08:00 — Human-friendly glossary and wiki clarifications)
+
+## 2025-12-25T02:05:05+00:00
+- Emphasized the `HUMAN_START_HERE.md` entrypoint in README quick start and cleared the inbox request. (ledger: 2025-12-24T13:58:44-08:00 — Human-friendly glossary and wiki clarifications)
+
 ## 2025-12-24T21:47:30+00:00
 - Executed `prompt_followup9.md` (added README governance CI bridge and new-repo bootstrap Skill); captured workflow snapshot `rev_009_current`; removed the prompt. (ledger: 2025-12-24T13:36:38-08:00 — Prompt followup execution (README governance))
 

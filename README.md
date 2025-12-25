@@ -34,16 +34,19 @@ Human intent flows through clarification, governed execution, and logging.
 The framework records specs, plans, validations, and handover artifacts.
 
 ## Quick start
-- Read [`HUMAN_START_HERE.md`](HUMAN_START_HERE.md) for the human entrypoint.
+- Start here: [`HUMAN_START_HERE.md`](HUMAN_START_HERE.md) — human entrypoint.
 - Read `AGENTS.md` for the authoritative execution contract.
 - Select a stack profile in `docs/stacks/`.
 - Add tasks in chat or `todo-inbox.md`.
 - Use `docs/humans/workflow-adoption.md` for new repositories.
+- Use `docs/humans/glossary.md` when a term is unfamiliar.
 
 ## Repository map
 - `AGENTS.md`: core governance rules and operating constraints.
 - `docs/agents.md`: operational framework and execution flow.
 - `docs/humans/`: human-facing guides and onboarding context.
+- `docs/humans/glossary.md`: clickable definitions for framework terms.
+- `docs/humans/concepts-map.md`: navigation map for common concepts.
 - `docs/context/`: agent ledgers and context management protocol.
 - `specs/`: spec contracts that govern changes.
 - `skills/`: deterministic Skill packages and schemas.
@@ -54,6 +57,43 @@ The framework records specs, plans, validations, and handover artifacts.
 The framework optimizes for governance, determinism, and auditability.
 It does not try to design UI, replace human judgment, or remove review.
 It is not a prompt library or a set of agent heuristics.
+
+## Context management as externalized state control
+
+### Problem statement
+- Conversational-only workflows drift: rules decay, specs get re-derived, and tokens bloat with repeated reminders.
+- Implicit constraints vanish from the chat window, causing silent regressions.
+- Context-window exhaustion forces premature truncation and re-teaching.
+
+### Architectural shift
+- Memory is externalized into versioned artifacts (`specs/`, `todo.md`, `completed.md`, `handover.md`, `runs/`).
+- Narrative context becomes symbolic references (spec IDs, Concept manifests, Synchronizations).
+- Control-plane chat is separated from state-plane repo artifacts (see `AGENTS.md` for authority boundaries).
+
+### Mechanisms (concrete)
+- `AGENTS.md` mandates spec-first execution and forbids free-form prompting.
+- Specs and Concepts in `specs/` and `concepts/` encode requirements and handlers for reuse across sessions.
+- Synchronization manifests in `synchronizations/` declare cross-concept coupling explicitly.
+- PDCA and CI enforcement (`docs/agents.md`, `.github/workflows/`) validate lint, schema, and governance rules every run.
+- Handover + run records (`handover.md`, `runs/`) rehydrate state without recalling prior chat.
+- UI intent governance (`skills/ui-governance/`, `concepts/ui-intent-protocol/`) blocks markup/style leakage regardless of prior tokens.
+
+### Why this reduces effective context pressure
+- The model does not need to “remember” past instructions; it reloads specs, manifests, and run records on demand.
+- Rehydration pulls authoritative files, not old messages, so truncation does not erase constraints.
+- Lost chat tokens do not imply lost rules because enforcement lives in versioned artifacts and CI gates.
+
+### Practical consequences
+- Longer productive sessions without rule drift.
+- Fewer correction loops because constraints are re-read, not re-taught.
+- Easy session restarts: reload `handover.md`, `todo.md`, and relevant specs.
+- Lower human cognitive load: follow the map instead of retyping context.
+- Detailed rationale: see `docs/humans/context-management.md`.
+
+### Non-claims and boundaries
+- Does not increase raw token limits.
+- Does not guarantee correctness without maintained specs and passing CI.
+- Does not remove the need for human review or domain expertise.
 
 ## README Generation and Governance
 README.md is produced from an explicit spec (`README_SPEC.yaml`) using the external `readme-spec-engine`.

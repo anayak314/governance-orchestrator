@@ -3,6 +3,7 @@
 This page is a navigation layer; it summarizes where to find authoritative specs, Skills, Concepts, Synchronizations, and governance docs. It never overrides them.
 
 - **Core Governance**: `AGENTS.md` (authoritative rules), `docs/agents.md` (operational framework), `HUMAN_START_HERE.md` (human entrypoint), `docs/humans/workflow-guide.md` (framework overview), `docs/humans/workflow-adoption.md` (how to apply the framework to a new project), `docs/workflow-audit.md` (framework change audit log), `docs/humans/user-guide.md` (human usage guide), `docs/humans/user-guide-cheat-sheet.md` (one-page quickstart), `docs/humans/about.md` (background and evolution).
+- **Clarifying Docs**: `docs/humans/glossary.md` (definitions with links), `docs/humans/concepts-map.md` (clickable navigation map), `docs/humans/context-management.md` (context pressure rationale).
 - **Security & Access**: `docs/security.md` (security playbook), `docs/access-manifest.md` (access policy for Skills/automation).
 - **Context & Ledgers**: `docs/context-management.md` for ledger templates, pruning workflow, and inter-agent protocol.
 - **Specs**: `specs/` (task specs; see `specs/skill-library-v1.md` for Skill system v1).
