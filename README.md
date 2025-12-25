@@ -35,6 +35,7 @@ The framework records specs, plans, validations, and handover artifacts.
 
 ## Quick start
 - Start here: [`HUMAN_START_HERE.md`](HUMAN_START_HERE.md) — human entrypoint.
+- If you want the fastest path, read `docs/humans/user-guide-cheat-sheet.md` and paste the quick-start prompt there.
 - Read `AGENTS.md` for the authoritative execution contract.
 - Select a stack profile in `docs/stacks/`.
 - Add tasks in chat or `todo-inbox.md`.

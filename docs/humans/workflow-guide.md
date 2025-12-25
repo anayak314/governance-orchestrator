@@ -2,6 +2,11 @@
 
 This document distills the Context-Engineering Framework for Coding Agents into a project-agnostic model for context-engineering teams. Use it whenever you need to port the governance model to another domain or explain the operating model to humans.
 
+## If you need the short version
+- Start with `HUMAN_START_HERE.md` and `docs/humans/user-guide-cheat-sheet.md`.
+- Use `todo-inbox.md` for tasks/decisions and let the agent manage AI-owned files.
+- Keep one Concept/task at a time; ask for a plan if the change is large.
+
 ## 1. Guiding Principles
 - **Spec-first:** Every task is anchored to an approved spec (or equivalent source of truth) before implementation begins.
 - **Single responsibility:** Each run focuses on one contained deliverable; handoffs and archives maintain continuity between runs.

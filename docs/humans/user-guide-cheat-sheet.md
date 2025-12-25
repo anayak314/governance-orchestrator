@@ -15,6 +15,7 @@ Constraints:
 Success criteria:
 Testing:
 ```
+Use `docs/humans/glossary.md` if any term is unclear.
 
 ## 2) Keep Scope Tight
 - One feature/behavior per request.

@@ -16,6 +16,11 @@ Read `AGENTS.md` and treat it as the authoritative contract.
 Operate in AI-only mode: run scripts yourself and update AI-managed files; humans only add tasks via chat or `todo-inbox.md`.
 
 If your provider has built-in governance features, use this framework as the source of truth and integrate with those features as needed.
+
+## If you are new (3 steps)
+- Read `docs/humans/user-guide-cheat-sheet.md` (one page).
+- Paste the quick-start prompt above into your agent and add your goal.
+- Keep tasks and decisions in chat or `todo-inbox.md`; let the agent handle the rest.
 ```
 
 ## Where Humans Should Act

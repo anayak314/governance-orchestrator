@@ -4,6 +4,9 @@
 
 Entries use ISO8601 timestamps and newest entries appear first.
 
+## 2025-12-25T08:03:07+00:00
+- Added beginner-friendly entry points to README and HUMAN_START_HERE and simplified human guides/cheat sheet for quick onboarding. (ledger: 2025-12-24T23:57:00-08:00 — Human docs clarity pass)
+
 ## 2025-12-25T02:19:28+00:00
 - Added spec-compiler-enforcement CI workflow enforcing spec-generation-framework provenance, compiler validation, Codex prompt consumption checks, and compiler drift detection. (ledger: 2025-12-24T18:15:02-08:00 — Spec compiler CI enforcement)
 

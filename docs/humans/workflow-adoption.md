@@ -4,6 +4,11 @@ This guide explains how to apply the ai-agents-workflow framework in this reposi
 
 The framework is AI-operated: humans provide tasks/decisions via chat or `todo-inbox.md`, and the agent runs scripts plus updates AI-managed files.
 
+## If you just want the fastest path
+- Say: “Apply this ai agents framework to my new project at <path> using <stack> (with or without Skills).”
+- Point to your stack profile under `docs/stacks/` (or the template).
+- Let the agent run `scripts/bootstrap-workflow.sh` and then review the summary.
+
 ## 1. Pick the Stack Profile
 - Choose the matching profile in `docs/stacks/` and follow it for layout, commands, linting, testing, and security expectations.
 - If no profile matches, copy `docs/stacks/STACK.template.md`, customize it, and link it in `docs/wiki/index.md`.

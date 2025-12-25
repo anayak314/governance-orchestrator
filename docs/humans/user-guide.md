@@ -2,6 +2,11 @@
 
 This guide explains how humans should plan, structure, and communicate work so the ai-agents-workflow framework produces fast, accurate results with minimal iteration. It complements `docs/humans/workflow-guide.md` (system overview) and `docs/humans/workflow-adoption.md` (setup).
 
+## If you only have 2 minutes
+- Read `docs/humans/user-guide-cheat-sheet.md`.
+- Use the Request Pack below, keep one task at a time, and answer clarifications quickly.
+- Add tasks in chat or `todo-inbox.md`; the agent handles scripts and AI-managed files.
+
 ## 1. What This Framework Is Good At
 - Turning a clear, bounded request into working code quickly.
 - Keeping changes auditable through specs, ledgers, and snapshots.
