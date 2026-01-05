@@ -187,3 +187,6 @@ Next Action: <who, when>
 - Lifecycle gate: run `scripts/enforce-lifecycle.py` to ensure `todo.md` has a task plan and required artifacts exist before execution.
 - Attention-bounded questions: one bounded question per turn, tied to Gap ID with rationale; non-compliant prompts are rejected.
 - Gap resolution requires evidence, user answer, or explicit assumption with risk/expiry; otherwise mark as unresolved.
+
+- Observability hook: log gate outcomes with umbrella `scripts/log_event.py` (pass via `--log-helper` to `scripts/enforce-lifecycle.py`).
+- Optional todo enforcement: use `--require-ceres-todo` to ensure projects use the CERES todo template header.

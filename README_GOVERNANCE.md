@@ -37,3 +37,6 @@ Located in the umbrella repo `schemas/`: Objective Contract, Gap Ledger, Task Pl
 ## Commands
 - Prompt Debugger (from umbrella root): `prompt-debugger/cli.py --prompt-file task-inbox.md > /tmp/debug_report.yaml`
 - Lifecycle gate (this repo): `scripts/enforce-lifecycle.py --todo todo.md --gap-ledger gap-ledger.json --prompt-report /tmp/debug_report.yaml`
+
+- Observability hook: use umbrella `scripts/log_event.py` via `scripts/enforce-lifecycle.py --log-helper ../scripts/log_event.py --task-id <id>` to log gate outcomes.
+- Optional template enforcement: `--require-ceres-todo` to ensure todo.md matches the CERES template header.
