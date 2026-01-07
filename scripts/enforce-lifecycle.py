@@ -20,6 +20,11 @@ MAX_TODO_LINE_LENGTH = 240
 EXECUTE_PROMPT_PATTERN = re.compile(r"Execute prompt:\s*([^\s]+)")
 FROM_PROMPT_PATTERN = re.compile(r"From prompt\s+([^\s:]+)(?:\s*:\s*(.+))?")
 
+SPEC_ID_MISSING_MESSAGE = (
+    "Planning blocked: spec_id not allocated. Run allocate-spec-id.py after elicitation readiness."
+)
+SPEC_ID_MULTIPLE_MESSAGE = "Planning blocked: multiple spec_id values detected in objective-contract.json."
+
 
 
 
@@ -80,6 +85,41 @@ def read_prompt_classification(path: Path) -> str | None:
         return classification
     return None
 
+
+
+
+def validate_spec_id(objective_path: Path) -> List[str]:
+    failures: List[str] = []
+    if not objective_path.exists():
+        failures.append(SPEC_ID_MISSING_MESSAGE)
+        return failures
+
+    try:
+        data = json.loads(objective_path.read_text(encoding="utf-8"))
+    except json.JSONDecodeError:
+        failures.append(SPEC_ID_MISSING_MESSAGE)
+        return failures
+
+    spec_id = data.get("spec_id")
+    if isinstance(spec_id, list):
+        values = [str(value).strip() for value in spec_id if str(value).strip()]
+        if len(values) > 1:
+            failures.append(SPEC_ID_MULTIPLE_MESSAGE)
+            return failures
+        if len(values) == 1:
+            spec_id = values[0]
+        else:
+            failures.append(SPEC_ID_MISSING_MESSAGE)
+            return failures
+
+    if not isinstance(spec_id, str) or not spec_id.strip():
+        failures.append(SPEC_ID_MISSING_MESSAGE)
+        return failures
+
+    if ',' in spec_id or ' ' in spec_id.strip():
+        failures.append(SPEC_ID_MULTIPLE_MESSAGE)
+
+    return failures
 
 def outcome_from_next_line(lines: List[str], index: int) -> bool:
     if index + 1 >= len(lines):
@@ -194,6 +234,10 @@ def main() -> None:
         "prompt_report": str(args.prompt_report) if args.prompt_report else None,
         "task_id": args.task_id,
     }
+
+    objective_path = args.todo.resolve().parent / "objective-contract.json"
+    context["objective_contract"] = str(objective_path)
+    failures.extend(validate_spec_id(objective_path))
 
     if not has_unchecked_tasks(args.todo):
         failures.append(f"Missing or empty task plan: {args.todo}")
